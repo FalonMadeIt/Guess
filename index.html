@@ -8,16 +8,31 @@
   <body>
     <h1>Welcome to the Number Guessing Game</h1>
     <hr>
-    <h2>Please Guess a Number</h2>
-
-    <input class="game1" type="number" max="10" min="1">
-      <button>Guess</button>
+    <div id="game1">
+      <h2>Human Vs. Computer</h2>
+      <h3>Please Guess a Number</h3>
+      <input type="number" max="10" min="1">
+      <button class="game1">Guess</button>
+    </div>
+   
       
       <br>
       <hr>
-      <h3>Now Pick a number for the computer to Guess</h3>
-      <input class="game2" type="number" max="10" min="1">
-      <button>Pick</button>
+      
+      <div id="game2">
+        <h2>Computer Vs. Human </h2>
+        <h3>Now Pick a number for the computer to Guess</h3>
+        <input class="game2" type="number" max="10" min="1">
+        <button ">Pick</button>
+      <div>
+        
+      <br>
+      <hr>
+      <div id="game3" >
+        <h2>Computer Vs. Computer</h2>
+        <h3 class="help">Press Go To Start</h3>
+        <button class="game3" >Go</button>
+      </div>
       
       
     <script src="guess.js"></script>
