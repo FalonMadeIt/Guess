@@ -60,7 +60,7 @@ var $ComputerVsComputer = document.getElementById('game3')
 var result = document.getElementById("game3").getElementsByTagName("h3");
 
 $ComputerVsComputer.addEventListener('click', function () {
-  alert("hi");
+
   var upper = 100;
   var randomDigit = getRandomNumber(upper); 
   var guess;
@@ -75,18 +75,6 @@ $ComputerVsComputer.addEventListener('click', function () {
 	  attempts += 1;
 	}
   
-  if(guess === randomDigit){
-    
-    div.innerHTML = '<h1>Hello</h1>';
-    
-    // result.appendChild("h3") = "The random number is " + guess + "It took the Computer " + attempts + " tries to guess your number!"
-   alert("help");
-  }
+  document.getElementById("test").innerHTML = "The random number was  " + guess +  ",  It took the Computer " + attempts + " attempts to guess this number! ";
   
-  
-  
- 
-
-	// document.getElementById("gam")("The random number is " + guess);
-	// document.write("It took the Computer " + attempts + " tries to guess your number! ");
 });
